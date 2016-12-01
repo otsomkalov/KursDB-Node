@@ -1,0 +1,95 @@
+extends layout
+
+block head
+  link(href='css/claims.css', rel='stylesheet')
+  title Заявления
+
+block body
+  if type=="user"
+    .container-fluid
+      .row
+        .col-sm-3.col-md-2.sidebar
+            ul.nav.nav-sidebar
+              li.active
+                a(href='') Мои заявления
+              //li
+                a(href='/profile') Профиль
+        .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+          table.table.table-bordered
+            thead
+              tr
+                th Текст заявления
+                th Просмотрено?
+                th Принято?
+            tbody
+              each val in statements
+                tr
+                  each val1 in val
+                    if val1==false
+                      td
+                        span.glyphicon.glyphicon-remove
+                    else if val1==true
+                      td
+                        span.glyphicon.glyphicon-ok
+                    else
+                      td=val1
+          .container
+            button(onclick="add()",value="Добавить заявление")
+
+  else if type=="emp"
+    .container-fluid
+      .row
+        .col-sm-3.col-md-2.sidebar
+          ul.nav.nav-sidebar
+            li.active
+              a(href='#') Просмотр заявлений
+        .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+          table.table.table-bordered
+            thead
+              tr
+                th Текст заявления
+                th Просмотрено?
+                th Принято?
+            tbody
+              each val in statements
+                tr
+                  each val1 in val
+                    if val1 == false
+                      td
+                        span.glyphicon.glyphicon-remove
+                    else if val1 == true
+                      td
+                        span.glyphicon.glyphicon-ok
+                    else
+                      td=val1
+
+  else
+    .container-fluid
+      .row
+        .col-sm-3.col-md-2.sidebar
+          ul.nav.nav-sidebar
+            li.active
+              a(href='#') Добавить сотрудника
+        .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+          table.table.table-bordered
+            thead
+              tr
+                th Фамилия
+                th Имя
+                th Отчество
+                th Дата рождения
+                th Номер паспорта
+                th Номер жетона
+                th Адрес
+                th Телефон
+                th E-mail
+            tbody
+              each val in employees
+                tr
+                  each val1 in val
+                    td=val1
+
+  script(src='bower_components/jquery/dist/jquery.min.js')
+  script(src='bower_components/bootstrap/js/bootstrap.min.js')
+  script(src='bower_components/angular/angular.js')
+  script(src="/js/statements.js")

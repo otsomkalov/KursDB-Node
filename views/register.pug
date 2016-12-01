@@ -1,0 +1,33 @@
+extends layout
+block head
+  title Регистрация
+  link(href='css/register.css', rel='stylesheet')
+block body
+  .container
+    .form-signin
+      h2.form-signin-heading(align="center") Регистрация
+      .form-group
+        input.form-control.surname(type='text', placeholder='Фамилия', required, onblur="checkSurname()")
+      .form-group
+        input.form-control.name(type='text', placeholder='Имя', required, onblur="checkName()")
+      .form-group
+        input.form-control.patronymic(type='text', placeholder='Отчество', required, onblur="checkPatr()")
+      .form-group
+        input.form-control.birth(id="birth",type='date', placeholder='Дата рождения', required, onblur="checkBirth()")
+      .form-group
+        input.form-control.passport(type='text', placeholder='Номер паспорта', required, onblur="checkPassport()")
+      .form-group
+        input.form-control.address(type='text', placeholder='Домашний адрес', required, onblur="checkAddress()")
+      .form-group
+        input.form-control.tel(type='tel', placeholder='Номер телефона', required, onblur="checkTel()")
+      .form-group
+        input.form-control.log(type='text', placeholder='Логин', required, onblur="checkLog()")
+      .form-group
+        input.form-control.pass(type='password', placeholder='Пароль', required, onblur="checkPass()")
+      .form-group
+        input.form-control.email(type='email', placeholder='E-Mail', required, onblur="checkEmail()")
+      .container-fluid(align="center")
+        button.btn.btn-lg.btn-primary.button(onclick="register()") Зарегистрироваться
+  script(src="/js/register.js")
+  script(src='bower_components/jquery/dist/jquery.min.js')
+  script(src='bower_components/bootstrap/js/bootstrap.min.js')
