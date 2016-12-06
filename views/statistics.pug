@@ -1,0 +1,23 @@
+extends layout
+block head
+  title Статистика
+  link(href='css/statistics.css', rel='stylesheet')
+block body
+  .container-fluid
+    .row
+      .col-sm-3.col-md-2.sidebar
+        ul.nav.nav-sidebar
+          li
+            a(href='/employees') Сотрудники
+          li.active
+            a(href='/statistics') Статистика
+      .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+        .container(align="center")
+          p Количество администраторов: #{admins}
+          p Количество работников: #{employees}
+          p Количество пользователей: #{users}
+          p Количество заявлений: #{statements}
+          p Количество не просмотренных и не принятых заявлений: #{notva}
+          p Количество просмотренных, но не принятых заявлений: #{vnota}
+          p Количство просмотренных и принятых заявлений: #{va}
+  include scripts

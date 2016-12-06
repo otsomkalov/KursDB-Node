@@ -1,6 +1,6 @@
 module.exports.get=(req,res,next)=>{
     "use strict";
-    if (req.session.name){
+    if (req.session.userId){
         res.redirect('/statements')
     }
     else{

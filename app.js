@@ -24,7 +24,7 @@ app.use(require('cookie-parser')());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-process.env.DATABASE_URL="postgres://postgres:123@localhost:5432/mydb";
+process.env.DATABASE_URL="postgres://postgres:123@localhost:5432/policestation";
 
 app.use(session({
     store: new (require('connect-pg-simple')(session))(process.env.DATABASE_URL),
@@ -42,10 +42,11 @@ app.use((err, req, res, next)=>{
         res.render('404');
     }
     else{
+        res.render('500');
         res.locals.message = err.message;
         res.locals.error = req.app.get('env') === 'development' ? err : {};
         res.status(err.status || 500);
-        res.render('500');
+        res.end();
         console.log(err);
     }
 });

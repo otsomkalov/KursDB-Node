@@ -40,3 +40,6 @@ body {
 .buttons {
   margin: 2px;
 }
+.alert.alert-danger {
+  margin: 5px;
+}

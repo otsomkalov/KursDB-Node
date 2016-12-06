@@ -1,15 +1,7 @@
 "use strict";
 const pg=require('pg');
 
-let config={
-    user: 'postgres',
-    database: 'mydb',
-    password: '123',
-    host: 'localhost',
-    port: 5432,
-};
-
-const client=new pg.Client("postgres://postgres:123@localhost:5432/mydb");
+const client=new pg.Client("postgres://postgres:123@localhost:5432/policestation");
 client.connect();
 /*let query=client.query(
     "CREATE TABLE users"
@@ -44,7 +36,6 @@ client.connect();
         }
 });*/
 module.exports=client;
-module.exports.config=config;
 
 
 

@@ -1,16 +1,14 @@
 extends  layout
 block head
-    title Вход
-    link(href='css/login.css', rel='stylesheet')
+  title Вход
+  link(href="css/login.css", rel="stylesheet")
 block body
-    .container
-      .form-signin
-        h2.form-signin-heading Вход:
-        input.form-control.email(type='email', placeholder='Логин/E-Mail', autofocus)
-        input.form-control.pass(type='password', placeholder='Password', required)
-        button.btn.btn-lg.btn-primary.buttons(onclick="login()") Войти
-        button.btn.btn-lg.btn-primary.buttons(onclick="register()") Регистрация
-
-    script(src="/js/login.js")
-    script(src='bower_components/jquery/dist/jquery.min.js')
-    script(src='bower_components/bootstrap/js/bootstrap.min.js')
+  .container
+    form.form-signin(action="/login", method="POST")
+      h2.form-signin-heading Вход:
+      input.form-control.email(type="text", placeholder="Логин/E-Mail", name="log", required, autofocus)
+      input.form-control.pass(type="password", placeholder="Password", name="pass", required)
+      button.btn.btn-lg.btn-primary.buttons(type="submit") Войти
+      button.btn.btn-lg.btn-primary.buttons(onclick="register()") Регистрация
+  include scripts
+  script(src="/js/login.js")
