@@ -15,7 +15,7 @@ module.exports=(app)=>{
 
     app.post('/register',require('./user/register').post);
 
-    app.get('/statements',require('./user/statements').get);
+    app.get('/statements',require('./statements').get);
 
     app.get('/statements/add',require('./user/add').get);
 
@@ -23,9 +23,11 @@ module.exports=(app)=>{
 
     app.get('/statements/:id',require('./user/report').get);
 
+    app.post('/statements',require('./statements').post);
+
     app.delete('/statements',require('./user/statements').delete);
 
-    app.put('/statements',require('./user/statements').put);
+    app.put('/statements',require('./statements').put);
 
     app.get('/employee',require('./admin/employees').get);
 

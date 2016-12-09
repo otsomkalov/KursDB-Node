@@ -1,14 +1,18 @@
 let client=require('../../db');
 let async=require('async');
+let dateFormat = require('dateformat');
 
-module.exports.get=()=>{
+module.exports.get=(req,res,next)=>{
     "use strict";
-    client.query("SELECT text,viewed,accepted FROM user ORDER BY id",(err,result)=>{
+    client.query("SELECT text,viewed,accepted,date FROM statements ORDER BY date",(err,result)=>{
         if (err){
             next(500);
         }
         else{
-            res.render('./employee/user',{
+            for (let i=0;i<result.rows.length;i++){
+                result.rows[i]['date']=dateFormat(new Date(result.rows[i]['date']),"dd/mm/yyyy");
+            }
+            res.render('./employee/statements',{
                 type:req.session.type,
                 statements:result.rows,
             });
@@ -16,11 +20,46 @@ module.exports.get=()=>{
     });
 };
 
-module.exports.put=()=>{
+module.exports.post=(req,res,next)=> {
+    "use strict";
+    async.waterfall([
+            (callback) => {
+                client.query("SELECT id FROM statements ORDER BY date", (err, result) => {
+                    if (err) {
+                        callback(500);
+                    }
+                    else {
+                        callback(null, result.rows)
+                    }
+                });
+            },
+            (arg, callback) => {
+                client.query("UPDATE statements SET viewed=true,emp_id=$1 WHERE id=$2",
+                    [req.session.userId, arg[req.body.id]['id']], (err, result) => {
+                    if (err) {
+                        callback(500)
+                    }
+                    else {
+                        callback(null)
+                    }
+                })
+            }
+        ],
+        (err) => {
+            if (err) {
+                next(err)
+            }
+            else {
+                res.sendStatus(200);
+            }
+        })
+};
+
+module.exports.put=(req,res,next)=>{
     "use strict";
     async.waterfall([
             (callback)=>{
-                client.query("SELECT id FROM user ORDER BY id",(err,result)=> {
+                client.query("SELECT id FROM statements ORDER BY date",(err,result)=> {
                     if (err){
                         callback(err)
                     }
@@ -30,7 +69,8 @@ module.exports.put=()=>{
                 });
             },
             (arg,callback)=>{
-                client.query("UPDATE user SET viewed=true,accepted=true,emp_id=$1 WHERE id=$2",[req.session.userId,arg[req.body.id]['id']],(err,result)=>{
+                client.query("UPDATE statements SET viewed=true,accepted=true,emp_id=$1 WHERE id=$2",
+                    [req.session.userId,arg[req.body.id]['id']],(err,result)=>{
                     if (err){
                         callback(err)
                     }
@@ -42,44 +82,10 @@ module.exports.put=()=>{
         ],
         (err)=>{
             if (err){
-                next(500)
+                console.log(err)
             }
             else{
                 res.sendStatus(200)
             }
         })
 };
-
-module.exports.post=()=>{
-    "use strict";
-    async.waterfall([
-            (callback)=>{
-                client.query("SELECT text,viewed,accepted,id FROM user ORDER BY id",(err,result)=>{
-                    if (err){
-                        callback(500);
-                    }
-                    else{
-                        callback(null,result.rows)
-                    }
-                });
-            },
-            (arg,callback)=>{
-                client.query("UPDATE user SET viewed=true,emp_id=$1 WHERE id=$2",[req.session.userId,arg[req.body.id]['id']],(err,result)=>{
-                    if (err){
-                        callback(500)
-                    }
-                    else{
-                        callback(null)
-                    }
-                })
-            }
-        ],
-        (err)=>{
-            if (err){
-                next(err)
-            }
-            else{
-                res.sendStatus(200);
-            }
-        })
-;

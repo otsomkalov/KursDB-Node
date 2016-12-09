@@ -64,11 +64,6 @@ $('.textarea').on('input',(e)=>{
     })
 });
 
-$('.add-btn').on('click',(e)=>{
-    "use strict";
-    window.location.href+='/add';
-});
-
 $('.show').on('click',(e)=>{
     "use strict";
     let options=$('option:selected');

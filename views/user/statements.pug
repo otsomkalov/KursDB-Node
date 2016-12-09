@@ -12,9 +12,11 @@ block body
           li.active
             a(href='') Мои заявления
           li
+            a(href='/statements/add') Добавить заявление
+          li
             a(href='/profile') Профиль
 
-      .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+      .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main(align="center")
         select
           option Все
           option Просмотрено
@@ -23,13 +25,11 @@ block body
           option Все
           option Принято
           option Не принято
-        |От
+        p От
         input(type="date")
-        | до
+        p до
         input(type="date")
-        button.show Показать
-        .container(align="center")
-          button.btn.btn-primary.add-btn Добавить заявление
+        button.btn.btn-default.show Показать
         -for (var i=0;i<statements.length;i++)
           .panel.panel-default(id="st"+i)
             .panel-heading
