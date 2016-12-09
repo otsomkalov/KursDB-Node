@@ -1,0 +1,24 @@
+doctype html
+head
+  title Заявление #{number}
+  link(href='../css/report.css', rel='stylesheet')
+body
+  div(align="right")
+    p Начальнику Центрального РУВД
+    p г.Харькова Пупкину В.В.,
+    p г.Харьков, ул. Артёма, д. 14,
+    p от #{surname} #{name} #{patronymic}, прож:
+    p #{address}
+    p тел. в г. Харькове: #{tel}
+    p Номер заявления: #{number}
+  div(align="center")
+    p Заявление о преступлении
+    p #{text}
+
+  div
+    div.div1
+      | Дата:
+      | #{date}
+    div.div1(align="right")
+      | Подпись:
+      | ________

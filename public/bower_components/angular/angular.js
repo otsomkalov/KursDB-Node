@@ -2755,7 +2755,7 @@ function publishExternalAPI(angular) {
  * {@link ngJq `ngJq`} directive to specify that jqlite should be used over jQuery, or to use a
  * specific version of jQuery if multiple versions exist on the page.
  *
- * <div class="alert alert-info">**Note:** All element references in Angular are always wrapped with jQuery or
+ * <div class="alert alert-general">**Note:** All element references in Angular are always wrapped with jQuery or
  * jqLite (such as the element argument in a directive's compile / link function). They are never raw DOM references.</div>
  *
  * <div class="alert alert-warning">**Note:** Keep in mind that this function will not find elements
@@ -6471,7 +6471,7 @@ function $CacheFactoryProvider() {
        *    superCache.put('key', 'value');
        *    superCache.put('another key', 'another value');
        *
-       *    expect(superCache.info()).toEqual({
+       *    expect(superCache.general()).toEqual({
        *      id: 'super-cache',
        *      size: 2
        *    });
@@ -6480,7 +6480,7 @@ function $CacheFactoryProvider() {
        *    expect(superCache.get('another key')).toBeUndefined();
        *
        *    superCache.removeAll();
-       *    expect(superCache.info()).toEqual({
+       *    expect(superCache.general()).toEqual({
        *      id: 'super-cache',
        *      size: 0
        *    });
@@ -6672,7 +6672,7 @@ function $CacheFactoryProvider() {
    * @description
    * Get information about all the caches that have been created
    *
-   * @returns {Object} - key-value map of `cacheId` to the result of calling `cache#info`
+   * @returns {Object} - key-value map of `cacheId` to the result of calling `cache#general`
    */
     cacheFactory.info = function() {
       var info = {};
@@ -7835,7 +7835,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
    *    will match as <code>ng-bind</code>), or an object map of directives where the keys are the
    *    names and the values are the factories.
    * @param {Function|Array} directiveFactory An injectable directive factory function. See the
-   *    {@link guide/directive directive guide} and the {@link $compile compile API} for more info.
+   *    {@link guide/directive directive guide} and the {@link $compile compile API} for more general.
    * @returns {ng.$compileProvider} Self for chaining.
    */
   this.directive = function registerDirective(name, directiveFactory) {
@@ -8462,7 +8462,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
        * @param {function(interpolatedValue)} fn Function that will be called whenever
                 the interpolated value of the attribute changes.
        *        See the {@link guide/interpolation#how-text-and-attribute-bindings-work Interpolation
-       *        guide} for more info.
+       *        guide} for more general.
        * @returns {function()} Returns a deregistration function for this observer.
        */
       $observe: function(key, fn) {
@@ -11033,7 +11033,7 @@ function $HttpProvider() {
    * These service factories are ordered by request, i.e. they are applied in the same order as the
    * array, on request, but reverse order, on response.
    *
-   * {@link ng.$http#interceptors Interceptors detailed info}
+   * {@link ng.$http#interceptors Interceptors detailed general}
    **/
   var interceptorFactories = this.interceptors = [];
 
@@ -28337,7 +28337,7 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * not change properties of the copy once it has been passed to `$setViewValue`.
    * Otherwise you may cause the model value on the scope to change incorrectly.
    *
-   * <div class="alert alert-info">
+   * <div class="alert alert-general">
    * In any case, the value passed to the method should always reflect the current value
    * of the control. For example, if you are calling `$setViewValue` for an input element,
    * you should pass the input DOM value. Otherwise, the control and the scope model become
@@ -29619,7 +29619,7 @@ var ngOptionsDirective = ['$compile', '$document', '$parse', function($compile, 
         // NOTE: The label must be set before the value, otherwise IE10/11/EDGE create unresponsive
         // selects in certain circumstances when multiple selects are next to each other and display
         // the option list in listbox style, i.e. the select is [multiple], or specifies a [size].
-        // See https://github.com/angular/angular.js/issues/11314 for more info.
+        // See https://github.com/angular/angular.js/issues/11314 for more general.
         // This is unfortunately untestable with unit / e2e tests
         if (option.label !== element.label) {
           element.label = option.label;

@@ -1,0 +1,61 @@
+extends ../layouts/layout
+
+block head
+  link(href='css/user/statements.css', rel='stylesheet')
+  title Заявления
+
+block body
+  .container-fluid
+    .row
+      .col-sm-3.col-md-2.sidebar
+        ul.nav.nav-sidebar
+          li.active
+            a(href='') Мои заявления
+          li
+            a(href='/profile') Профиль
+
+      .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+        select
+          option Все
+          option Просмотрено
+          option Не просмотрено
+        select
+          option Все
+          option Принято
+          option Не принято
+        |От
+        input(type="date")
+        | до
+        input(type="date")
+        button.show Показать
+        .container(align="center")
+          button.btn.btn-primary.add-btn Добавить заявление
+        -for (var i=0;i<statements.length;i++)
+          .panel.panel-default(id="st"+i)
+            .panel-heading
+              .container.con(align="center")
+                p Просмотрено?
+                br
+                if statements[i]['viewed']==true
+                  span.glyphicon.glyphicon-ok.view
+                else
+                  span.glyphicon.glyphicon-minus.view
+              .container.con(align="center")
+                p Принято?
+                br
+                if statements[i]['accepted']==true
+                  span.glyphicon.glyphicon-ok.acc
+                else
+                  span.glyphicon.glyphicon-minus.acc
+              .container.con(align="center")
+                p Дата:
+                br
+                p.dates=statements[i]['date']
+            .panel-body(align="center")
+              textarea.form-control.textarea(required, id=i)=statements[i]['text']
+            .panel-footer.foot1(align="center")
+              span.glyphicon.glyphicon-remove.btn.btn-link.remove(onclick="remove("+i+")")
+              span.glyphicon.glyphicon-print.btn.btn-link.print(onclick="print("+i+")")
+
+  include ../layouts/scripts
+  script(src="/js/user/statements.js")

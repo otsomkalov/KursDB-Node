@@ -63,7 +63,7 @@ class User{
                     client.query("SELECT id FROM users WHERE (log=$1 OR email=$2) AND pass=$3 ",[this.log,this.email,
                         this.pass],(err,result)=>{
                         if (err){
-
+                            callback(err)
                         }
                         else{
                             callback(null,result.rows,'user')
@@ -79,7 +79,7 @@ class User{
                         client.query("SELECT id FROM employees WHERE (log=$1 OR email=$2) AND pass=$3 ",[this.log,
                             this.email,this.pass],(err,result)=>{
                             if (err){
-
+                                callback(err)
                             }
                             else{
                                 callback(null,result.rows,'emp')
@@ -96,7 +96,7 @@ class User{
                         client.query("SELECT id FROM admins WHERE (log=$1 OR email=$2) AND pass=$3 ",[this.log,
                             this.email,this.pass],(err,result)=>{
                             if (err){
-
+                                callback(err)
                             }
                             else{
                                 callback(null,result.rows,'admin')
@@ -106,13 +106,18 @@ class User{
                 }
             ],
             (err,result1,result2)=>{
-                if (result1.length!=0){
-                    req.session.userId=result1[0].id;
-                    req.session.type=result2;
-                    res.sendStatus(303);
+                if (err){
+                    console.log(err)
                 }
                 else{
-                    res.send(403);
+                    if (result1.length!=0){
+                        req.session.userId=result1[0].id;
+                        req.session.type=result2;
+                        res.sendStatus(303)
+                    }
+                    else{
+                        res.sendStatus(403)
+                    }
                 }
             });
     }

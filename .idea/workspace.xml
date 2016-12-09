@@ -5,54 +5,102 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b82ca008-cc50-4b51-8671-35bd98c38cda" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/general.styl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/statements.styl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/statistics.styl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/employees.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/employees.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/query.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/report.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/sort.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/employees.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/query.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/report.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/scripts.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/sort.pug" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/statistics.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/statistics.pug" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/claims.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/claims.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/employees.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/statements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/statisticks.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/statisticks.pug" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/general/404.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/general/500.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/general/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/general/index.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/user/add.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/user/report.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/user/add.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/user/statements.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/admin/add.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/admin/change.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/admin/delete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/employee/statements.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/user/add.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/employee/add.pug" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/employee/change.pug" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/employee/statements.pug" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/general/404.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/general/500.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/general/contacts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/general/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/general/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/user/add.pug" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/index.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/statements.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/routes/sort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/500.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/query.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/sort.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/sort.pug" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.js" afterPath="$PROJECT_DIR$/db.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/User.js" afterPath="$PROJECT_DIR$/models/User.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/employees.styl" afterPath="$PROJECT_DIR$/public/css/employees.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/login.css" afterPath="$PROJECT_DIR$/public/css/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/login.styl" afterPath="$PROJECT_DIR$/public/css/login.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/login.js" afterPath="$PROJECT_DIR$/public/js/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/logout.js" afterPath="$PROJECT_DIR$/public/js/logout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/register.js" afterPath="$PROJECT_DIR$/public/js/register.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/statements.js" afterPath="$PROJECT_DIR$/public/js/statements.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/login.js" afterPath="$PROJECT_DIR$/routes/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/logout.js" afterPath="$PROJECT_DIR$/routes/logout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/profile.js" afterPath="$PROJECT_DIR$/routes/profile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/register.js" afterPath="$PROJECT_DIR$/routes/register.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bower_components/angular/angular.js" afterPath="$PROJECT_DIR$/public/bower_components/angular/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bower_components/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/public/bower_components/jquery/dist/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bower_components/jquery/dist/jquery.slim.js" afterPath="$PROJECT_DIR$/public/bower_components/jquery/dist/jquery.slim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bower_components/jquery/src/css.js" afterPath="$PROJECT_DIR$/public/bower_components/jquery/src/css.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bower_components/jquery/src/event.js" afterPath="$PROJECT_DIR$/public/bower_components/jquery/src/event.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/root.js" afterPath="$PROJECT_DIR$/routes/root.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/statements.js" afterPath="$PROJECT_DIR$/routes/statements.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/statistics.js" afterPath="$PROJECT_DIR$/routes/statistics.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.pug" afterPath="$PROJECT_DIR$/views/layout.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/login.html" afterPath="$PROJECT_DIR$/views/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/login.pug" afterPath="$PROJECT_DIR$/views/login.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/profile.pug" afterPath="$PROJECT_DIR$/views/profile.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/register.html" afterPath="$PROJECT_DIR$/views/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/register.pug" afterPath="$PROJECT_DIR$/views/register.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/statements.pug" afterPath="$PROJECT_DIR$/views/statements.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/employees.css" afterPath="$PROJECT_DIR$/public/css/admin/employees.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/employees.styl" afterPath="$PROJECT_DIR$/public/css/admin/employees.styl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/general.css" afterPath="$PROJECT_DIR$/public/css/general/general.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/general.styl" afterPath="$PROJECT_DIR$/public/css/general/general.styl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/login.css" afterPath="$PROJECT_DIR$/public/css/general/login.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/login.styl" afterPath="$PROJECT_DIR$/public/css/general/login.styl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/profile.css" afterPath="$PROJECT_DIR$/public/css/user/profile.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/profile.styl" afterPath="$PROJECT_DIR$/public/css/user/profile.styl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/register.css" afterPath="$PROJECT_DIR$/public/css/user/register.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/register.styl" afterPath="$PROJECT_DIR$/public/css/user/register.styl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/statements.css" afterPath="$PROJECT_DIR$/public/css/user/statements.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/statements.styl" afterPath="$PROJECT_DIR$/public/css/user/statements.styl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/statistics.css" afterPath="$PROJECT_DIR$/public/css/admin/statistics.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/statistics.styl" afterPath="$PROJECT_DIR$/public/css/admin/statistics.styl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/employees.js" afterPath="$PROJECT_DIR$/public/js/employees/employees.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/login.js" afterPath="$PROJECT_DIR$/public/js/general/login.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/logout.js" afterPath="$PROJECT_DIR$/public/js/general/logout.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/register.js" afterPath="$PROJECT_DIR$/public/js/user/register.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/employees.js" afterPath="$PROJECT_DIR$/routes/admin/employees.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/general/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/login.js" afterPath="$PROJECT_DIR$/routes/general/login.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/logout.js" afterPath="$PROJECT_DIR$/routes/general/logout.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/profile.js" afterPath="$PROJECT_DIR$/routes/user/profile.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/query.js" afterPath="$PROJECT_DIR$/routes/general/query.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/register.js" afterPath="$PROJECT_DIR$/routes/user/register.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/report.js" afterPath="$PROJECT_DIR$/routes/user/report.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/statements.js" afterPath="$PROJECT_DIR$/routes/user/statements.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/statistics.js" afterPath="$PROJECT_DIR$/routes/admin/statistics.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/404.html" afterPath="$PROJECT_DIR$/views/general/query.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/404.pug" afterPath="$PROJECT_DIR$/views/general/404.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/500.pug" afterPath="$PROJECT_DIR$/views/general/500.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/about.pug" afterPath="$PROJECT_DIR$/views/general/about.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/contacts.html" afterPath="$PROJECT_DIR$/views/general/about.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/contacts.pug" afterPath="$PROJECT_DIR$/views/general/contacts.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/employees.html" afterPath="$PROJECT_DIR$/views/admin/employees.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/employees.pug" afterPath="$PROJECT_DIR$/views/admin/employees.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/index.pug" afterPath="$PROJECT_DIR$/views/general/index.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/layout.html" afterPath="$PROJECT_DIR$/views/layouts/layout.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/layout.pug" afterPath="$PROJECT_DIR$/views/layouts/layout.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/login.pug" afterPath="$PROJECT_DIR$/views/general/login.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/profile.html" afterPath="$PROJECT_DIR$/views/user/profile.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/profile.pug" afterPath="$PROJECT_DIR$/views/user/profile.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/query.pug" afterPath="$PROJECT_DIR$/views/general/query.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/register.html" afterPath="$PROJECT_DIR$/views/user/register.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/register.pug" afterPath="$PROJECT_DIR$/views/user/register.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/report.html" afterPath="$PROJECT_DIR$/views/user/report.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/report.pug" afterPath="$PROJECT_DIR$/views/user/report.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/scripts.html" afterPath="$PROJECT_DIR$/views/layouts/scripts.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/scripts.pug" afterPath="$PROJECT_DIR$/views/layouts/scripts.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/statements.html" afterPath="$PROJECT_DIR$/views/user/statements.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/statements.pug" afterPath="$PROJECT_DIR$/views/user/statements.pug" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/statistics.html" afterPath="$PROJECT_DIR$/views/admin/statistics.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/statistics.pug" afterPath="$PROJECT_DIR$/views/admin/statistics.pug" />
     </list>
     <ignored path="Kurs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,104 +123,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="register.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/register.pug">
+      <file leaf-file-name="report.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/user/report.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+            <state relative-caret-position="51">
+              <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/register.js">
+      <file leaf-file-name="statements.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/user/statements.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/register.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="157" column="35" lean-forward="false" selection-start-line="157" selection-start-column="35" selection-end-line="157" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/User.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+            <state relative-caret-position="520">
+              <caret line="52" column="23" lean-forward="false" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="statements.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/statements.js">
+        <entry file="file://$PROJECT_DIR$/routes/user/statements.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="96" lean-forward="false" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="statements.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/user/statements.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="486">
-              <caret line="129" column="40" lean-forward="false" selection-start-line="129" selection-start-column="40" selection-end-line="129" selection-end-column="40" />
+              <caret line="100" column="60" lean-forward="false" selection-start-line="100" selection-start-column="60" selection-end-line="100" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/login.styl">
+      <file leaf-file-name="profile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/user/profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="45" column="14" lean-forward="false" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+            <state relative-caret-position="153">
+              <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/login.js">
+      <file leaf-file-name="profile.pug" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/user/profile.pug">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="49" lean-forward="false" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+              <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="query.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/query.js">
+      <file leaf-file-name="report.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/user/report.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="11" column="61" lean-forward="false" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="statements.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/statements.js">
+      <file leaf-file-name="profile.styl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/user/profile.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="173" column="68" lean-forward="false" selection-start-line="173" selection-start-column="68" selection-end-line="173" selection-end-column="68" />
-              <folding>
-                <element signature="e#1308#2691#0" expanded="false" />
-                <element signature="e#2732#3647#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/login.js">
+      <file leaf-file-name="report.styl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/user/report.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            <state relative-caret-position="0">
+              <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="statements.styl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/user/statements.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="503">
+              <caret line="39" column="11" lean-forward="false" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -186,9 +231,9 @@
         <option value="Jade File" />
         <option value="CSS File" />
         <option value="tsconfig.json" />
-        <option value="Stylus File" />
         <option value="Pug File" />
         <option value="JavaScript File" />
+        <option value="Stylus File" />
       </list>
     </option>
   </component>
@@ -220,6 +265,8 @@
       <find>id+1</find>
       <find>result</find>
       <find>rows</find>
+      <find>result[0]</find>
+      <find>p</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
@@ -241,6 +288,8 @@
       <replace>'</replace>
       <replace>result.rows</replace>
       <replace>rows[0]</replace>
+      <replace>result.rows[0]</replace>
+      <replace>h4</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -249,57 +298,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bin/www" />
-        <option value="$PROJECT_DIR$/views/claims.pug" />
-        <option value="$PROJECT_DIR$/routes/claims.js" />
-        <option value="$PROJECT_DIR$/views/index.pug" />
-        <option value="$PROJECT_DIR$/public/css/register.styl" />
-        <option value="$PROJECT_DIR$/public/css/profile.styl" />
-        <option value="$PROJECT_DIR$/routes/statisticks.js" />
-        <option value="$PROJECT_DIR$/views/500.pug" />
-        <option value="$PROJECT_DIR$/views/about.pug" />
-        <option value="$PROJECT_DIR$/views/contacts.pug" />
-        <option value="$PROJECT_DIR$/public/css/claims.styl" />
-        <option value="$PROJECT_DIR$/routes/profile.js" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/db.js" />
-        <option value="$PROJECT_DIR$/public/js/employees.js" />
-        <option value="$PROJECT_DIR$/routes/employees.js" />
-        <option value="$PROJECT_DIR$/public/css/login.styl" />
-        <option value="$PROJECT_DIR$/views/script.pug" />
-        <option value="$PROJECT_DIR$/views/profile.pug" />
-        <option value="$PROJECT_DIR$/views/statisticks.pug" />
-        <option value="$PROJECT_DIR$/public/js/jquery.maskedinput.js" />
-        <option value="$PROJECT_DIR$/views/404.pug" />
-        <option value="$PROJECT_DIR$/views/register.pug" />
-        <option value="$PROJECT_DIR$/views/login.pug" />
-        <option value="$PROJECT_DIR$/public/js/login.js" />
-        <option value="$PROJECT_DIR$/public/css/statements.styl" />
-        <option value="$PROJECT_DIR$/views/sort.pug" />
-        <option value="$PROJECT_DIR$/routes/sort.js" />
-        <option value="$PROJECT_DIR$/routes/login.js" />
-        <option value="$PROJECT_DIR$/views/layout.pug" />
-        <option value="$PROJECT_DIR$/public/js/logout.js" />
-        <option value="$PROJECT_DIR$/routes/logout.js" />
-        <option value="$PROJECT_DIR$/public/css/general.styl" />
-        <option value="$PROJECT_DIR$/public/css/employees.styl" />
-        <option value="$PROJECT_DIR$/public/css/statistics.styl" />
-        <option value="$PROJECT_DIR$/routes/statements.js" />
-        <option value="$PROJECT_DIR$/routes/statistics.js" />
-        <option value="$PROJECT_DIR$/views/employees.pug" />
-        <option value="$PROJECT_DIR$/views/statistics.pug" />
-        <option value="$PROJECT_DIR$/views/statements.pug" />
+        <option value="$PROJECT_DIR$/routes/statements/delete.js" />
+        <option value="$PROJECT_DIR$/views/employees/statements.pug" />
+        <option value="$PROJECT_DIR$/views/statements/statements.pug" />
+        <option value="$PROJECT_DIR$/views/employees/add.pug" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/public/js/statements.js" />
-        <option value="$PROJECT_DIR$/routes/statementsId.js" />
-        <option value="$PROJECT_DIR$/views/report.pug" />
-        <option value="$PROJECT_DIR$/routes/report.js" />
-        <option value="$PROJECT_DIR$/views/query.pug" />
-        <option value="$PROJECT_DIR$/routes/root.js" />
-        <option value="$PROJECT_DIR$/routes/query.js" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/routes/user/login.js" />
+        <option value="$PROJECT_DIR$/routes/user/register.js" />
+        <option value="$PROJECT_DIR$/routes/statements/statements.js" />
+        <option value="$PROJECT_DIR$/routes/statements.js" />
+        <option value="$PROJECT_DIR$/routes/user/change.js" />
+        <option value="$PROJECT_DIR$/routes/user/delete.js" />
+        <option value="$PROJECT_DIR$/routes/statements/change.js" />
+        <option value="$PROJECT_DIR$/routes/admin/add.js" />
+        <option value="$PROJECT_DIR$/routes/admin/change.js" />
+        <option value="$PROJECT_DIR$/routes/admin/delete.js" />
+        <option value="$PROJECT_DIR$/public/css/user/add.styl" />
+        <option value="$PROJECT_DIR$/public/css/add.styl" />
+        <option value="$PROJECT_DIR$/public/css/statements.styl" />
+        <option value="$PROJECT_DIR$/public/css/report.styl" />
+        <option value="$PROJECT_DIR$/views/user/report.pug" />
+        <option value="$PROJECT_DIR$/routes/employee/statements.js" />
+        <option value="$PROJECT_DIR$/public/js/statements/statements.js" />
+        <option value="$PROJECT_DIR$/public/js/statements/add.js" />
+        <option value="$PROJECT_DIR$/public/js/employees/employees.js" />
+        <option value="$PROJECT_DIR$/public/css/index.styl" />
+        <option value="$PROJECT_DIR$/public/css/general/index.styl" />
+        <option value="$PROJECT_DIR$/public/css/general/500.styl" />
+        <option value="$PROJECT_DIR$/public/css/general/404.styl" />
+        <option value="$PROJECT_DIR$/views/general/404.pug" />
+        <option value="$PROJECT_DIR$/views/general/500.pug" />
+        <option value="$PROJECT_DIR$/public/css/general/login.styl" />
+        <option value="$PROJECT_DIR$/views/layouts/layout.pug" />
+        <option value="$PROJECT_DIR$/views/layouts/scripts.pug" />
+        <option value="$PROJECT_DIR$/routes/user/report.js" />
+        <option value="$PROJECT_DIR$/views/user/add.pug" />
+        <option value="$PROJECT_DIR$/routes/general/login.js" />
+        <option value="$PROJECT_DIR$/routes/user/add.js" />
+        <option value="$PROJECT_DIR$/public/js/user/add.js" />
+        <option value="$PROJECT_DIR$/views/general/login.pug" />
+        <option value="$PROJECT_DIR$/public/js/general/login.js" />
+        <option value="$PROJECT_DIR$/views/user/register.pug" />
         <option value="$PROJECT_DIR$/models/User.js" />
-        <option value="$PROJECT_DIR$/public/js/register.js" />
-        <option value="$PROJECT_DIR$/routes/register.js" />
+        <option value="$PROJECT_DIR$/public/css/user/statements.styl" />
+        <option value="$PROJECT_DIR$/routes/root.js" />
+        <option value="$PROJECT_DIR$/views/user/statements.pug" />
+        <option value="$PROJECT_DIR$/routes/user/statements.js" />
+        <option value="$PROJECT_DIR$/public/js/user/statements.js" />
+        <option value="$PROJECT_DIR$/routes/user/profile.js" />
+        <option value="$PROJECT_DIR$/public/css/user/profile.styl" />
+        <option value="$PROJECT_DIR$/views/user/profile.pug" />
       </list>
     </option>
   </component>
@@ -348,21 +397,39 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kurs" />
+              <option name="myItemId" value="KursDB-Node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kurs" />
+              <option name="myItemId" value="KursDB-Node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kurs" />
+              <option name="myItemId" value="KursDB-Node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kurs" />
+              <option name="myItemId" value="KursDB-Node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KursDB-Node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KursDB-Node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -372,11 +439,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kurs" />
+              <option name="myItemId" value="KursDB-Node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kurs" />
+              <option name="myItemId" value="KursDB-Node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -386,11 +453,43 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kurs" />
+              <option name="myItemId" value="KursDB-Node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kurs" />
+              <option name="myItemId" value="KursDB-Node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KursDB-Node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KursDB-Node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KursDB-Node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KursDB-Node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -398,31 +497,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kurs" />
+              <option name="myItemId" value="KursDB-Node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kurs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kurs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kurs" />
+              <option name="myItemId" value="KursDB-Node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -436,11 +525,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kurs" />
+              <option name="myItemId" value="KursDB-Node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Kurs" />
+              <option name="myItemId" value="KursDB-Node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -450,8 +539,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -463,17 +552,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Roaming/npm/pug.cmd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="list.type.of.created.stylesheet" value="Stylus" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\User\Documents\Projects\Kurs\config" />
-      <recent name="D:\User\Documents\Projects\Kurs\models" />
-      <recent name="D:\User\Documents\Projects\Kurs\routes" />
-      <recent name="D:\User\Documents\Projects\Kurs\public\js" />
+      <recent name="D:\User\Documents\GitHub\KursDB-Node\public\js\user" />
+      <recent name="D:\User\Documents\GitHub\KursDB-Node\public\js\general" />
+      <recent name="D:\User\Documents\GitHub\KursDB-Node\public\css\user" />
+      <recent name="D:\User\Documents\GitHub\KursDB-Node\views\general" />
+      <recent name="D:\User\Documents\GitHub\KursDB-Node\routes\user" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.bin\www">
@@ -599,11 +689,16 @@
       <workItem from="1481024700801" duration="4048000" />
       <workItem from="1481028789573" duration="4094000" />
       <workItem from="1481043802117" duration="21444000" />
+      <workItem from="1481147970804" duration="1926000" />
+      <workItem from="1481190438539" duration="1913000" />
+      <workItem from="1481218541858" duration="12078000" />
+      <workItem from="1481234902175" duration="797000" />
+      <workItem from="1481269640992" duration="9587000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174513000" />
+    <option name="totallyTimeSpent" value="200814000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -621,6 +716,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24710222" sideWeight="0.49447078" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31419286" sideWeight="0.5168598" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.48946258" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5055292" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31419286" sideWeight="0.48314014" order="2" side_tool="false" content_ui="tabs" />
@@ -633,7 +729,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.48946258" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -653,7 +748,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
@@ -662,170 +757,152 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/profile.html">
+    <entry file="file://$PROJECT_DIR$/public/css/user/add.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/general/query.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Downloads/notes-master/notes-master/public/js/login.js">
+    <entry file="file://$PROJECT_DIR$/routes/user/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/employee/statements.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/profile.styl">
+    <entry file="file://$PROJECT_DIR$/public/js/employees/employees.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="24" />
+        <state relative-caret-position="153">
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/claims.styl" />
-    <entry file="file://$PROJECT_DIR$/public/css/statements.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/jquery.maskedinput.js" />
-    <entry file="file://$PROJECT_DIR$/views/about.pug">
+    <entry file="file://$PROJECT_DIR$/routes/statements.js" />
+    <entry file="file://$PROJECT_DIR$/views/general/404.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/404.pug">
+    <entry file="file://$PROJECT_DIR$/views/general/500.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/statements.html">
+    <entry file="file://$PROJECT_DIR$/public/css/admin/employees.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/logout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/logout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/index.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/register.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/statements.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="83" column="12" lean-forward="false" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/general.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="61" column="22" lean-forward="false" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/employees.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/statistics.styl">
+    <entry file="file://$PROJECT_DIR$/public/css/admin/statistics.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/employees.pug">
+    <entry file="file://$PROJECT_DIR$/public/css/general/404.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/employees.js">
+    <entry file="file://$PROJECT_DIR$/public/css/general/500.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/layer.js">
+    <entry file="file://$PROJECT_DIR$/public/css/general/general.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="70" column="4" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="-459">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/sort.js">
+    <entry file="file://$PROJECT_DIR$/public/css/general/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/general/login.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-220">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user/change.js" />
+    <entry file="file://$PROJECT_DIR$/routes/user/delete.js" />
+    <entry file="file://$PROJECT_DIR$/views/employee/add.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/employee/statements.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/general/about.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/layout.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/scripts.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user/sort.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="63" column="36" lean-forward="false" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
@@ -833,221 +910,220 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/statistics.js">
+    <entry file="file://$PROJECT_DIR$/views/general/index.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="83" column="38" lean-forward="false" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
+        <state relative-caret-position="204">
+          <caret line="12" column="85" lean-forward="true" selection-start-line="12" selection-start-column="85" selection-end-line="12" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/general/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/user/register.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/employees.js">
+    <entry file="file://$PROJECT_DIR$/routes/user/add.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        <state relative-caret-position="323">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/sort.pug">
+    <entry file="file://$PROJECT_DIR$/routes/general/logout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="91" column="33" lean-forward="false" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/statements.pug">
+    <entry file="file://$PROJECT_DIR$/public/js/general/logout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="50" column="91" lean-forward="false" selection-start-line="50" selection-start-column="91" selection-end-line="50" selection-end-column="91" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/statistics.pug">
+    <entry file="file://$PROJECT_DIR$/views/general/login.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/profile.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/login.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/scripts.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/report.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/500.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="46" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/contacts.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/report.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/query.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/root.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/query.js">
+    <entry file="file://$PROJECT_DIR$/public/js/general/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/statements.js">
+    <entry file="file://$PROJECT_DIR$/routes/general/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="173" column="68" lean-forward="false" selection-start-line="173" selection-start-column="68" selection-end-line="173" selection-end-column="68" />
-          <folding>
-            <element signature="e#1308#2691#0" expanded="false" />
-            <element signature="e#2732#3647#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/login.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="45" column="14" lean-forward="false" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="102">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/User.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+        <state relative-caret-position="-228">
+          <caret line="78" column="62" lean-forward="false" selection-start-line="78" selection-start-column="62" selection-end-line="78" selection-end-column="62" />
+          <folding>
+            <element signature="n#!!block;n#reg#0;n#User#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/change.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/statements.js">
+    <entry file="file://$PROJECT_DIR$/public/js/user/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/register.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/root.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="37" column="54" lean-forward="false" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/add.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <marker date="1481233680003" expanded="true" signature="463:505" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/user/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/user/report.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/user/statements.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="39" column="11" lean-forward="false" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user/statements.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="96" lean-forward="false" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/user/statements.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
-          <caret line="129" column="40" lean-forward="false" selection-start-line="129" selection-start-column="40" selection-end-line="129" selection-end-column="40" />
+          <caret line="100" column="60" lean-forward="false" selection-start-line="100" selection-start-column="60" selection-end-line="100" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/register.pug">
+    <entry file="file://$PROJECT_DIR$/routes/user/profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        <state relative-caret-position="153">
+          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/login.js">
+    <entry file="file://$PROJECT_DIR$/views/user/report.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/statements.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="52" column="23" lean-forward="false" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user/report.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="61" lean-forward="false" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/user/profile.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/profile.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="49" lean-forward="false" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="157" column="35" lean-forward="false" selection-start-line="157" selection-start-column="35" selection-end-line="157" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
           <folding />
         </state>
       </provider>

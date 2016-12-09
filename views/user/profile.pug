@@ -1,0 +1,25 @@
+extends ../layouts/layout
+block head
+  title Профиль
+  link(href='css/user/profile.css', rel='stylesheet')
+block body
+  .container(align="center")
+    h4 Фамилия:
+    input.form-control(type="text", value=user['surname'])
+    h4 Имя:
+    input.form-control(type="text", value=user['name'])
+    h4 Отчество:
+    input.form-control(type="text", value=user['patronymic'])
+    h4
+    input.form-control(type="date", value=user['birth'])
+    h4
+    input.form-control(type="text", value=user['passport'])
+    h4
+    input.form-control(type="text", value=user['address'])
+    h4
+    input.form-control(type="text", value=user['tel'])
+    h4
+    input.form-control(type="text", value=user['pass'])
+    h4
+    input.form-control(type="text", value=user['email'])
+  include ../layouts/scripts

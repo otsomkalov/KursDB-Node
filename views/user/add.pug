@@ -1,0 +1,21 @@
+extends ../layouts/layout
+
+block head
+  title Добавить заявление
+  link(href='../css/add.css', rel='stylesheet')
+
+block body
+  .container(align="right")
+    p Начальнику Центрального РУВД
+    p г.Харькова Пупкину В.В.,
+    p г.Харьков, ул. Артёма, д. 14,
+    p от #{surname} #{name} #{patronymic}, прож:
+    p #{address}
+    p тел. в г. Харькове: #{tel}
+  .container(align="center")
+    p Заявление
+    form(action="/statements/add", method="POST")
+      textarea.form-control(name="text",required)
+      br
+      button.btn.btn-success(type="submit") Добавить
+  script(src="js/user/add")

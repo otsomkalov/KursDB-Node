@@ -1,0 +1,8 @@
+extends ../layouts/layout
+block head
+  title Запросы
+block body
+  .container
+    form.form-control(action="/query",method="POST")
+      textarea.form-control
+      button.btn.btn-default(type="submit")

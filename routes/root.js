@@ -1,43 +1,43 @@
 module.exports=(app)=>{
-    app.delete('/logout',require('./logout'));
+    app.delete('/logout',require('./general/logout'));
 
-    app.get('/',require('./index').get);
+    app.get('/',require('./general/index').get);
 
-    app.get('/query',require('./query').get);
+    app.get('/query',require('./general/query').get);
 
-    app.post('/query',require('./query').post);
+    app.post('/query',require('./general/query').post);
 
-    app.get('/login',require('./login').get);
+    app.get('/login',require('./general/login').get);
 
-    app.post('/login',require('./login').post);
+    app.post('/login',require('./general/login').post);
 
-    app.get('/register',require('./register').get);
+    app.get('/register',require('./user/register').get);
 
-    app.post('/register',require('./register').post);
+    app.post('/register',require('./user/register').post);
 
-    app.get('/statements',require('./statements').get);
+    app.get('/statements',require('./user/statements').get);
 
-    app.get('/statements/:id',require('./report').get);
+    app.get('/statements/add',require('./user/add').get);
 
-    app.post('/statements',require('./statements').post);
+    app.post('/statements/add',require('./user/add').post);
 
-    app.delete('/statements',require('./statements').delete);
+    app.get('/statements/:id',require('./user/report').get);
 
-    app.put('/statements',require('./statements').put);
+    app.delete('/statements',require('./user/statements').delete);
 
-    app.get('/employees',require('./employees').get);
+    app.put('/statements',require('./user/statements').put);
 
-    app.delete('/employees',require('./employees').delete);
+    app.get('/employee',require('./admin/employees').get);
+
+    app.delete('/employee',require('./admin/employees').delete);
 
     app.get('/about',(req,res)=>{res.render('about')});
 
     app.get('/contacts',(req,res)=>{res.render('contacts')});
 
-    app.get('/profile',require('./profile').get);
+    app.get('/profile',require('./user/profile').get);
 
-    app.post('/sort',require('./sort').post);
-
-    app.get('/statistics',require('./statistics').get);
+    app.get('/statistics',require('./admin/statistics').get);
 
     app.get('*',(req,res,next)=>{next(404)});
 };

@@ -39,10 +39,10 @@ routes(app);
 // error handler
 app.use((err, req, res, next)=>{
     if (err==404){
-        res.render('404');
+        res.render('./general/404');
     }
     else{
-        res.render('500');
+        res.render('./general/500');
         res.locals.message = err.message;
         res.locals.error = req.app.get('env') === 'development' ? err : {};
         res.status(err.status || 500);

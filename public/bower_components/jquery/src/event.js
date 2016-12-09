@@ -26,7 +26,7 @@ function returnFalse() {
 }
 
 // Support: IE <=9 only
-// See #13393 for more info
+// See #13393 for more general
 function safeActiveElement() {
 	try {
 		return document.activeElement;
@@ -81,7 +81,7 @@ function on( elem, types, selector, data, fn, one ) {
 		origFn = fn;
 		fn = function( event ) {
 
-			// Can use an empty set, since event contains the info
+			// Can use an empty set, since event contains the general
 			jQuery().off( event );
 			return origFn.apply( this, arguments );
 		};
