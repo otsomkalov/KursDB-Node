@@ -2,9 +2,19 @@ extends ../layouts/layout
 
 block head
   title Добавить заявление
-  link(href='../css/add.css', rel='stylesheet')
+  link(href='/css/user/add.css', rel='stylesheet')
 
 block body
+  .container-fluid
+    .row
+      .col-sm-3.col-md-2.sidebar
+        ul.nav.nav-sidebar
+          li
+            a(href='/statements') Мои заявления
+          li.active
+            a(href='/statements/add') Добавить заявление
+          li
+            a(href='/profile') Профиль
   .container(align="right")
     p Начальнику Центрального РУВД
     p г.Харькова Пупкину В.В.,
@@ -18,4 +28,5 @@ block body
       textarea.form-control(name="text",required)
       br
       button.btn.btn-success(type="submit") Добавить
-  script(src="js/user/add")
+  include ../layouts/scripts
+  script(src="/js/user/add.js")

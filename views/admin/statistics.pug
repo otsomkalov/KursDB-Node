@@ -1,23 +1,50 @@
 extends ../layouts/layout
 block head
   title Статистика
-  link(href='css/statistics.css', rel='stylesheet')
+  link(href='css/admin/statistics.css', rel='stylesheet')
 block body
   .container-fluid
     .row
       .col-sm-3.col-md-2.sidebar
         ul.nav.nav-sidebar
           li
-            a(href='/employee') Сотрудники
+            a(href='/employees') Сотрудники
+          li
+            a(href='/employees/add') Добавить сотрудника
           li.active
             a(href='/statistics') Статистика
       .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
         .container(align="center")
-          p Количество администраторов: #{admins}
-          p Количество работников: #{employees}
-          p Количество пользователей: #{users}
-          p Количество заявлений: #{statements}
+          p Количество администраторов: #{adminsCount}
+          p Количество работников: #{employeesCount}
+          p Количество пользователей: #{usersCount}
+          p Количество заявлений: #{statementsCount}
           p Количество не просмотренных и не принятых заявлений: #{notva}
           p Количество просмотренных, но не принятых заявлений: #{vnota}
           p Количство просмотренных и принятых заявлений: #{va}
+          h4 От
+          input(type="date")
+          h4 до
+          input(type="date")
+          br
+          button.btn.btn-default Показать
+          table.table.table-bordered
+            thead
+              tr
+                th id
+                th Фамилия
+                th Имя
+                th Отчество
+                th Дата рождения
+                th Номер паспорта
+                th Адрес
+                th Телефон
+                th E-mail
+                th Количество заявлений
+            tbody
+              each val in userStat
+                tr
+                each val1 in val
+                  td=val1
   include ../layouts/scripts
+  script(src="/js/admin/statistics.js")

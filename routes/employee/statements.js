@@ -4,7 +4,11 @@ let dateFormat = require('dateformat');
 
 module.exports.get=(req,res,next)=>{
     "use strict";
-    client.query("SELECT text,viewed,accepted,date FROM statements ORDER BY date",(err,result)=>{
+    client.query(`SELECT statements.text,statements.viewed,statements.accepted,statements.date,users.surname,users.name,users.patronymic 
+    FROM statements,users 
+    WHERE statements.user_id=users.id
+    ORDER BY date`,
+        (err,result)=>{
         if (err){
             next(500);
         }
@@ -47,7 +51,7 @@ module.exports.post=(req,res,next)=> {
         ],
         (err) => {
             if (err) {
-                next(err)
+                next(500)
             }
             else {
                 res.sendStatus(200);
@@ -82,7 +86,7 @@ module.exports.put=(req,res,next)=>{
         ],
         (err)=>{
             if (err){
-                console.log(err)
+                next(500)
             }
             else{
                 res.sendStatus(200)

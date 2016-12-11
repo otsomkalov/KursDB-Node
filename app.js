@@ -30,7 +30,7 @@ app.use(session({
     store: new (require('connect-pg-simple')(session))(process.env.DATABASE_URL),
     secret: "Police",
     resave: false,
-    cookie: { maxAge: 30 * 24 * 60 * 60 * 1000 },
+    cookie: { maxAge: 24 * 60 * 60 * 1000 },
     saveUninitialized:false
 }));
 

@@ -1,20 +1,23 @@
 extends ../layouts/layout
 block head
   title Работники отделения
-  link(href='css/employee.css', rel='stylesheet')
+  link(href='/css/admin/employees.css', rel='stylesheet')
 block body
   .container-fluid
     .row
       .col-sm-3.col-md-2.sidebar
         ul.nav.nav-sidebar
           li.active
-            a(href='/employee') Сотрудники
+            a(href='/employees') Сотрудники
+          li
+            a(href='/employees/add') Добавить сотрудника
           li
             a(href='/statistics') Статистика
       .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
         table.table.table-bordered
           thead
             tr
+              th id
               th Фамилия
               th Имя
               th Отчество
@@ -30,8 +33,6 @@ block body
               each val1 in employees[i]
                 td=val1
               td(style="border-bottom: hidden;border-top: hidden;border-right: hidden;")
-                span.glyphicon.glyphicon-remove.btn.btn-link(onclick="remove(" + i + ")")
-  script(src='bower_components/angular/angular.js')
-  script(src="/js/logout.js")
-  script(src="/js/employee.js")
+                span.glyphicon.glyphicon-remove.btn.btn-link(id=employees[i]['id'])
   include ../layouts/scripts
+  script(src="/js/admin/employees.js")

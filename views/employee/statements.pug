@@ -10,21 +10,39 @@ block body
           li.active
             a(href='#') Просмотр заявлений
 
-      .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+      .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main(align="center")
+        input.form-control.surname(type="text",placeholder="Фамилия")
+        input.form-control.name(type="text",placeholder="Имя")
+        input.form-control.patronymic(type="text",placeholder="Отчество")
+        br
+        select
+          option Все
+          option Просмотрено
+          option Не просмотрено
+        select
+          option Все
+          option Принято
+          option Не принято
+        h4 От
+        input(type="date")
+        h4 до
+        input(type="date")
+        button.btn.btn-default.show Показать
         -for (var i=0;i<statements.length;i++)
-          .panel.panel-default
+          .panel.panel-default(id="st"+i)
+            .panel-heading=statements[i]['surname']+" "+statements[i]['name']+" "+statements[i]['patronymic']
             .panel-body
               p=statements[i]['text']
             .panel-footer
               if statements[i]['viewed']==true
-                span.glyphicon.glyphicon-ok.btn.btn-link
+                span.glyphicon.glyphicon-ok.btn.btn-link.view
               else
                 span.glyphicon.glyphicon-minus.btn.btn-link.view(id=i)
               if statements[i]['accepted']==true
-                span.glyphicon.glyphicon-ok.btn.btn-link
+                span.glyphicon.glyphicon-ok.btn.btn-link.accept
               else
                 span.glyphicon.glyphicon-minus.btn.btn-link.accept(id=i)
               p Дата создания:
-              p=statements[i]['date']
+              p.dates=statements[i]['date']
   include ../layouts/scripts
   script(src="/js/employee/statements.js")

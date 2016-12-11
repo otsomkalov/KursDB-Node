@@ -4,7 +4,12 @@ module.exports.get=(req,res,next)=>{
         require('./user/statements').get(req,res,next);
     }
     else{
-        require('./employee/statements').get(req,res,next);
+        if (req.session.type=="emp"){
+            require('./employee/statements').get(req,res,next);
+        }
+        else{
+            res.redirect('/employees')
+        }
     }
 };
 

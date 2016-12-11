@@ -123,15 +123,17 @@ $('.show').on('click',(e)=>{
     let dates=$('.dates');
     for (let i=0;i<dates.length;i++){
         if (date1){
-            if (new Date(dates[i].innerText)<date1){
+            let date=dates[i].innerText.split('/');
+            if (new Date(date[2],date[1]-1,date[0])<=date1){
                 $('#st'+i)[0].style.display="none";
             }
         }
     }
 
     for (let i=0;i<dates.length;i++){
+        let date=dates[i].innerText.split('/');
         if (date2){
-            if (new Date(dates[i].innerText)>date2){
+            if (new Date(date[2],date[1]-1,date[0])>=date2){
                 $('#st'+i)[0].style.display="none";
             }
         }

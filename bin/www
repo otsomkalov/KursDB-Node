@@ -10,7 +10,7 @@ let http = require('http');
 const https=require('https');
 const fs=require('fs');
 const express=require('express');
-
+let io=require('socket.io');
 /**
  * Get port from environment and store in Express.
  */
@@ -35,6 +35,10 @@ app1.get('*',(req,res)=>{
 });
 
 let httpsServer=https.createServer(options,app).listen(443);
+
+io=io.listen(httpsServer);
+module.exports.server=httpsServer;
+io.on('connection',require('../routes/sockets'));
 
 /**
  * Listen on provided port, on all network interfaces.

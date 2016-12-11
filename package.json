@@ -18,6 +18,8 @@
     "morgan": "~1.7.0",
     "pg": "^6.1.0",
     "serve-favicon": "~2.3.0",
-    "stylus": "0.54.5"
+    "socket.io": "^1.7.1",
+    "stylus": "0.54.5",
+    "websocket": "^1.0.23"
   }
 }

@@ -17,27 +17,33 @@ module.exports=(app)=>{
 
     app.get('/statements',require('./statements').get);
 
+    app.post('/statements',require('./statements').post);
+
+    app.put('/statements',require('./statements').put);
+
+    app.delete('/statements',require('./user/statements').delete);
+
     app.get('/statements/add',require('./user/add').get);
 
     app.post('/statements/add',require('./user/add').post);
 
     app.get('/statements/:id',require('./user/report').get);
 
-    app.post('/statements',require('./statements').post);
+    app.get('/employees',require('./admin/employees').get);
 
-    app.delete('/statements',require('./user/statements').delete);
+    app.delete('/employees',require('./admin/employees').delete);
 
-    app.put('/statements',require('./statements').put);
+    app.get('/employees/add',require('./admin/add').get);
 
-    app.get('/employee',require('./admin/employees').get);
-
-    app.delete('/employee',require('./admin/employees').delete);
+    app.post('/employees/add',require('./admin/add').post);
 
     app.get('/about',(req,res)=>{res.render('about')});
 
     app.get('/contacts',(req,res)=>{res.render('contacts')});
 
     app.get('/profile',require('./user/profile').get);
+
+    app.post('/profile',require('./user/profile').post);
 
     app.get('/statistics',require('./admin/statistics').get);
 

@@ -3,23 +3,37 @@ block head
   title Профиль
   link(href='css/user/profile.css', rel='stylesheet')
 block body
+  .container-fluid
+    .row
+      .col-sm-3.col-md-2.sidebar
+        ul.nav.nav-sidebar
+          li
+            a(href='/statements') Мои заявления
+          li
+            a(href='/statements/add') Добавить заявление
+          li.active
+            a(href='/profile') Профиль
   .container(align="center")
-    h4 Фамилия:
-    input.form-control(type="text", value=user['surname'])
-    h4 Имя:
-    input.form-control(type="text", value=user['name'])
-    h4 Отчество:
-    input.form-control(type="text", value=user['patronymic'])
-    h4
-    input.form-control(type="date", value=user['birth'])
-    h4
-    input.form-control(type="text", value=user['passport'])
-    h4
-    input.form-control(type="text", value=user['address'])
-    h4
-    input.form-control(type="text", value=user['tel'])
-    h4
-    input.form-control(type="text", value=user['pass'])
-    h4
-    input.form-control(type="text", value=user['email'])
+    form(action="/profile",method="POST")
+      h4 Фамилия:
+      input.form-control(name="surname",type="text", value=user['surname'])
+      h4 Имя:
+      input.form-control(name="name",type="text", value=user['name'])
+      h4 Отчество:
+      input.form-control(name="patronymic",type="text", value=user['patronymic'])
+      h4 Дата рождения:
+      input.form-control(name="birth",type="date", value=user['birth'])
+      h4 Паспорт:
+      input.form-control(name="passport",type="text", value=user['passport'])
+      h4 Адрес:
+      input.form-control(name="address",type="text", value=user['address'])
+      h4 Телефон:
+      input.form-control(name="tel",type="text", value=user['tel'])
+      h4 Пароль
+      input.form-control(name="pass",type="text", value=user['pass'])
+      h4 E-mail:
+      input.form-control(name="email",type="text", value=user['email'])
+      br
+      button.btn.btn-default(type="submit") Сохранить
   include ../layouts/scripts
+  script(src="/js/user/profile.js")

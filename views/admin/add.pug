@@ -1,0 +1,35 @@
+extends ../layouts/layout
+
+block head
+  title Добавить заявление
+  link(href='/css/admin/add.css', rel='stylesheet')
+
+block body
+  .container-fluid
+    .row
+      .col-sm-3.col-md-2.sidebar
+        ul.nav.nav-sidebar
+          li
+            a(href='/employees') Сотрудники
+          li.active
+            a(href='/employees/add') Добавить сотрудника
+          li
+            a(href='/statistics') Статистика
+      .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+        .container(align="center")
+          form.form-signin(action="/register", method="POST")
+            h2.form-signin-heading(align="center") Регистрация
+            input.form-control(type="text", placeholder="Фамилия", name="surname", required)
+            input.form-control(type="text", placeholder="Имя", name="name" required)
+            input.form-control(type="text", placeholder="Отчество", name="patronymic", required)
+            input.form-control(type="date", id="birth", placeholder="Дата рождения", name="birth" required)
+            input.form-control(type="text", placeholder="Номер паспорта", name="passport", required)
+            input.form-control(type="text", placeholder="Номер жетона", name="ticket",required)
+            input.form-control(type="text", placeholder="Домашний адрес", name="address", required)
+            input.form-control(type="tel", placeholder="Номер телефона", name="tel", required)
+            input.form-control(type="text", placeholder="Логин", name="log", required)
+            input.form-control(type="password", placeholder="Пароль", name="pass", required)
+            input.form-control(type="email", placeholder="E-Mail", name="email", required)
+            button.btn.btn-lg.btn-primary.button(type="submit") Зарегистрировать
+  include ../layouts/scripts
+  script(src="/js/admin/add.js")

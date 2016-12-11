@@ -10,13 +10,14 @@ block body
       .col-sm-3.col-md-2.sidebar
         ul.nav.nav-sidebar
           li.active
-            a(href='') Мои заявления
+            a(href='/statements') Мои заявления
           li
             a(href='/statements/add') Добавить заявление
           li
             a(href='/profile') Профиль
 
       .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main(align="center")
+
         select
           option Все
           option Просмотрено
@@ -25,9 +26,9 @@ block body
           option Все
           option Принято
           option Не принято
-        p От
+        h4 От
         input(type="date")
-        p до
+        h4 до
         input(type="date")
         button.btn.btn-default.show Показать
         -for (var i=0;i<statements.length;i++)
