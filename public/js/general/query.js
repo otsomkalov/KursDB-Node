@@ -6,6 +6,7 @@ $('.btn.btn-default').on('click',(e)=>{
     socket.on('result',(data)=>{
         if (typeof (data)!='string'){
             $('.result')[0].style.display="none";
+            $('table')[0].style.display="";
             $('thead').remove();
             $('tbody').remove();
             for (let i=0;i<data.length;i++){

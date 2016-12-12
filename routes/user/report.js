@@ -14,7 +14,6 @@ module.exports.get=(req,res,next)=>{
             });
         }
     ],(err,result)=>{
-        console.log(result);
         res.render('./user/report',{
             surname:result[0].surname,
             name:result[0].name,

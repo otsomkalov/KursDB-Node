@@ -8,15 +8,6 @@ module.exports.get=(req,res,next)=>{
     })
 };
 
-module.exports.post=(req,res,next)=>{
-    "use strict";
-    client.query("$1",[req.body.text],(err,result)=>{
-        if(err){
-
-        }
-    })
-};
-
 module.exports.socket=(socket)=>{
     "use strict";
     socket.on('query',(query)=>{

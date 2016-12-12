@@ -5,8 +5,6 @@ module.exports=(app)=>{
 
     app.get('/query',require('./general/query').get);
 
-    app.post('/query',require('./general/query').post);
-
     app.get('/login',require('./general/login').get);
 
     app.post('/login',require('./general/login').post);

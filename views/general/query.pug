@@ -3,6 +3,18 @@ block head
   title Запросы
   link(href='css/general/query.css', rel='stylesheet')
 block body
+  .container-fluid
+    .row
+      .col-sm-3.col-md-2.sidebar
+        ul.nav.nav-sidebar
+          li
+            a(href='/employees') Сотрудники
+          li
+            a(href='/employees/add') Добавить сотрудника
+          li
+            a(href='/statistics') Статистика
+          li.active
+            a(href='/query') Запрос
   .container(align="center")
     textarea.form-control
     button.btn.btn-default Запрос

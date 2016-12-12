@@ -1,15 +1,17 @@
 module.exports.get=(req,res,next)=>{
     "use strict";
-    if (req.session.type=="user"){
-        require('./user/statements').get(req,res,next);
-    }
-    else{
-        if (req.session.type=="emp"){
+    switch (req.session.type){
+        case "user":
+            require('./user/statements').get(req,res,next);
+            break;
+        case "emp":
             require('./employee/statements').get(req,res,next);
-        }
-        else{
-            res.redirect('/employees')
-        }
+            break;
+        case "admin":
+            res.redirect('/employees');
+            break;
+        default:
+            res.redirect('/login');
     }
 };
 
