@@ -68,4 +68,5 @@ body {
 }
 textarea.form-control {
   height: 400px;
+  text-align: center;
 }

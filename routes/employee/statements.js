@@ -1,6 +1,16 @@
 let client=require('../../db');
 let async=require('async');
 let dateFormat = require('dateformat');
+const nodemailer=require('nodemailer');
+const smtpConfig = {
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: {
+        user: 'kurspolicestation@gmail.com', // Your email id
+        pass: 'we34n8xza' // Your password
+    }};
+const transporter=nodemailer.createTransport(smtpConfig);
 
 module.exports.get=(req,res,next)=>{
     "use strict";
@@ -44,7 +54,37 @@ module.exports.post=(req,res,next)=> {
                         callback(500)
                     }
                     else {
-                        callback(null)
+                        callback(null,arg[req.body.id]['id'])
+                    }
+                })
+            },
+            (arg,callback)=>{
+                client.query("SELECT user_id FROM statements WHERE id=$1",[arg],(err,result)=>{
+                    if (err){
+                        callback(500)
+                    }
+                    else{
+                        callback(null,result.rows[0].user_id,arg);
+                    }
+                })
+            },
+            (arg1,arg2,callback)=>{
+                client.query("SELECT name,email FROM users WHERE id=$1",[arg1],(err,result)=>{
+                    if (err){
+                        callback(500)
+                    }
+                    else{
+                        let mailOptions = {
+                            from: '"Police Station" <kurspolicestation@gmail.com>', // sender address
+                            to: result.rows[0].email, // list of receivers
+                            subject: 'Ваше заявление # ' + arg2 + ' просмотрено!', // Subject line
+                            text: 'Здравствуйте, ' + result.rows[0].name+'. Ваше заявление №' + arg2+' просмотрено! Перейдите на сайт за дополнительной информацией', // plaintext body
+                        };
+                        transporter.sendMail(mailOptions, function(error, info){
+                            if(error){
+                                callback(500)
+                            }
+                        });
                     }
                 })
             }
@@ -79,7 +119,37 @@ module.exports.put=(req,res,next)=>{
                         callback(err)
                     }
                     else{
-                        callback(null)
+                        callback(null,arg[req.body.id]['id'])
+                    }
+                })
+            },
+            (arg,callback)=>{
+                client.query("SELECT user_id FROM statements WHERE id=$1",[arg],(err,result)=>{
+                    if (err){
+                        callback(500)
+                    }
+                    else{
+                        callback(null,result.rows[0].user_id,arg);
+                    }
+                })
+            },
+            (arg1,arg2,callback)=>{
+                client.query("SELECT name,email FROM users WHERE id=$1",[arg1],(err,result)=>{
+                    if (err){
+                        callback(500)
+                    }
+                    else{
+                        let mailOptions = {
+                            from: '"Police Station" <kurspolicestation@gmail.com>', // sender address
+                            to: result.rows[0].email, // list of receivers
+                            subject: 'Ваше заявление # ' + arg2 + ' просмотрено и принято!', // Subject line
+                            text: 'Здравствуйте, ' + result.rows[0].name+'. Ваше заявление №' + arg2+' просмотрено и принято! Перейдите на сайт за дополнительной информацией', // plaintext body
+                        };
+                        transporter.sendMail(mailOptions, function(error, info){
+                            if(error){
+                                callback(500)
+                            }
+                        });
                     }
                 })
             }
