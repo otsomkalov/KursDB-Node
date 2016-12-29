@@ -1,7 +1,7 @@
 extends ../layouts/layout
 
 block head
-  link(href='css/user/statements.css', rel='stylesheet')
+  link(href='/css/user/statements.css', rel='stylesheet')
   title Заявления
 
 block body
@@ -15,22 +15,30 @@ block body
             a(href='/statements/add') Добавить заявление
           li
             a(href='/profile') Профиль
-
-      .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main(align="center")
-
-        select
-          option Все
-          option Просмотрено
-          option Не просмотрено
-        select
-          option Все
-          option Принято
-          option Не принято
-        h4 От
-        input(type="date")
-        h4 до
-        input(type="date")
-        button.btn.btn-default.show Показать
+      .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+        .container.info(align="left")
+          select.selectpicker
+            option Все
+            option Просмотрено
+            option Не просмотрено
+          select.selectpicker
+            option Все
+            option Принято
+            option Не принято
+          br
+          h4 От
+          input(type="date").form-control
+          h4 до
+          input(type="date").form-control
+          br
+          button.btn.btn-success(id="show") Показать
+          button.btn.btn-info Сбросить фильтр
+        .container.info(align="right")
+          h4 Сортировать по дате:
+          br
+          select(onchange="sort()").selectpicker
+            option По возрастанию
+            option По убыванию
         -for (var i=0;i<statements.length;i++)
           .panel.panel-default(id="st"+i)
             .panel-heading
@@ -55,8 +63,7 @@ block body
             .panel-body(align="center")
               textarea.form-control.textarea(required, id=i)=statements[i]['text']
             .panel-footer.foot1(align="center")
-              span.glyphicon.glyphicon-remove.btn.btn-link.remove(onclick="remove("+i+")")
               span.glyphicon.glyphicon-print.btn.btn-link.print(onclick="print("+i+")")
-
+              span.glyphicon.glyphicon-remove.btn.btn-link.remove(onclick="remove("+i+")")
   include ../layouts/scripts
   script(src="/js/user/statements.js")

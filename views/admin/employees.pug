@@ -35,6 +35,7 @@ block body
               each val1 in employees[i]
                 td=val1
               td(style="border-bottom: hidden;border-top: hidden;border-right: hidden;")
-                span.glyphicon.glyphicon-remove.btn.btn-link(id=employees[i]['id'])
+                span.glyphicon.glyphicon-pencil.btn.btn-link(onclick="edit("+employees[i]['id']+")")
+                span.glyphicon.glyphicon-remove.btn.btn-link(onclick="remove("+employees[i]['id']+")")
   include ../layouts/scripts
   script(src="/js/admin/employees.js")

@@ -1,7 +1,9 @@
 extends ../layouts/layout
+
 block head
   title Регистрация
   link(href="css/user/register.css", rel="stylesheet")
+
 block body
   .container(align="center")
     form.form-signin(action="/register", method="POST")

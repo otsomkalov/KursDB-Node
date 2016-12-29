@@ -1,17 +1,25 @@
-$('.btn-link').on('click',(e)=>{
+let remove=(id)=>{
     "use strict";
-    e.preventDefault();
     $.ajax({
         url:'/employees',
         type:'DELETE',
         data:{
-            id:e.target.id
+            id:id
         },
         statusCode:{
             200:()=>{
                 window.location.reload()
+            },
+            403:()=>{
+                alert("Нельзя удалить данного сотрудника без нарушения целостности")
             }
         }
     });
-});
+};
+
+let edit=(id)=>{
+    "use strict";
+    window.location.href+='/edit/'+id
+}
+
 

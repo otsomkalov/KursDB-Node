@@ -3,7 +3,7 @@ let dateFormat=require('dateformat');
 
 module.exports.get=(req,res,next)=>{
     "use strict";
-    client.query("SELECT * FROM "+ req.session.type+'s' +" WHERE id=$1",[req.session.userId],(err,result)=>{
+    client.query("SELECT * FROM users WHERE id=$1",[req.session.userId],(err,result)=>{
         if (err){
             next(500)
         }

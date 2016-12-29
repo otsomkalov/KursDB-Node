@@ -7,8 +7,7 @@ block body
     form.form-signin(action="/login", method="POST")
       h2.form-signin-heading Вход:
       input.form-control.email(type="text", placeholder="Логин/E-Mail", name="log", required, autofocus)
-      input.form-control.pass(type="password", placeholder="Password", name="pass", required)
+      input.form-control.pass(type="password", placeholder="Пароль", name="pass", required)
       button.btn.btn-lg.btn-primary.buttons(type="submit") Войти
-      button.btn.btn-lg.btn-primary.buttons(onclick="register()") Регистрация
   include ../layouts/scripts
   script(src="/js/general/login.js")

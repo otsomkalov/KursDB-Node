@@ -27,7 +27,7 @@ module.exports.delete=(req,res,next)=>{
     "use strict";
     client.query("DELETE FROM employees WHERE id=$1",[req.body.id],(err,result)=>{
         if (err){
-            next(500)
+            res.send(403)
         }
         else {
             res.send(200)

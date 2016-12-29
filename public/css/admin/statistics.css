@@ -66,6 +66,9 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
+.glyphicon {
+  margin-right: 5px;
+}
 .btn.btn-default {
   margin: 10px;
 }

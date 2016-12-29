@@ -1,4 +1,15 @@
+let CheckLogin=(req,res,next)=>{
+    "use strict";
+    if (req.session.type){
+        next()
+    }
+    else{
+        res.redirect('/')
+    }
+};
+
 module.exports=(app)=>{
+
     app.delete('/logout',require('./general/logout'));
 
     app.get('/',require('./general/index').get);
@@ -13,37 +24,43 @@ module.exports=(app)=>{
 
     app.post('/register',require('./user/register').post);
 
-    app.get('/statements',require('./statements').get);
+    app.get('/statements',CheckLogin,require('./statements').get);
 
-    app.post('/statements',require('./statements').post);
+    app.post('/statements',CheckLogin,require('./statements').post);
 
-    app.put('/statements',require('./statements').put);
+    app.put('/statements',CheckLogin,require('./statements').put);
 
-    app.delete('/statements',require('./user/statements').delete);
+    app.delete('/statements',CheckLogin,require('./user/statements').delete);
 
-    app.get('/statements/add',require('./user/add').get);
+    app.get('/statements/add',CheckLogin,require('./user/add').get);
 
-    app.post('/statements/add',require('./user/add').post);
+    app.post('/statements/add',CheckLogin,require('./user/add').post);
 
-    app.get('/statements/:id',require('./user/report').get);
+    app.get('/statements/:id',CheckLogin,require('./user/report').get);
 
-    app.get('/employees',require('./admin/employees').get);
+    app.get('/employees',CheckLogin,require('./admin/employees').get);
 
-    app.delete('/employees',require('./admin/employees').delete);
+    app.delete('/employees',CheckLogin,require('./admin/employees').delete);
 
-    app.get('/employees/add',require('./admin/add').get);
+    app.get('/employees/add',CheckLogin,require('./admin/add').get);
 
-    app.post('/employees/add',require('./admin/add').post);
+    app.post('/employees/add',CheckLogin,require('./admin/add').post);
 
-    app.get('/about',(req,res)=>{res.render('about')});
+    app.get('/employees/edit/:id',CheckLogin,require('./admin/edit').get);
 
-    app.get('/contacts',(req,res)=>{res.render('contacts')});
+    app.post('/employees/edit/:id',CheckLogin,require('./admin/edit').post);
+
+    app.get('/about',(req,res)=>{res.render('./general/about')});
+
+    app.get('/contacts',(req,res)=>{res.render('./general/contacts')});
 
     app.get('/profile',require('./user/profile').get);
 
-    app.post('/profile',require('./user/profile').post);
+    app.get('/logout',require('./general/logout'));
 
-    app.get('/statistics',require('./admin/statistics').get);
+    app.post('/profile',CheckLogin,require('./user/profile').post);
+
+    app.get('/statistics',CheckLogin,require('./admin/statistics').get);
 
     app.get('*',(req,res,next)=>{next(404)});
 };

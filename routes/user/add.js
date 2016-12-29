@@ -3,6 +3,9 @@ let client=require('../../db');
 module.exports.get=(req,res,next)=>{
     "use strict";
     client.query("SELECT surname,name,patronymic,tel,address FROM users WHERE id=$1",[req.session.userId],(err,result)=>{
+        if (err){
+
+        }
         res.render('./user/add',{
             type:req.session.type,
             surname:result.rows[0].surname,

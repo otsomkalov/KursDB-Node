@@ -1,8 +1,3 @@
-let register=()=>{
-    "use strict";
-    window.location.href='/register'
-};
-
 $('form').on('submit',(e)=>{
     "use strict";
     e.preventDefault();

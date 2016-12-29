@@ -64,7 +64,38 @@ $('.textarea').on('input',(e)=>{
     })
 });
 
-$('.show').on('click',(e)=>{
+let sort=()=>{
+    "use strict";
+    let option=$('option:selected')[2].innerText;
+    let dates=$('.dates');
+    switch (option){
+        case "По возрастанию":
+            for (let i=0;i<dates.length;i++){
+                for (let j=i;j<dates.length;j++){
+                    let date1=dates[i].innerText.split('/');
+                    let date2=dates[j].innerText.split('/');
+                    if (new Date(date1[2],date1[1]-1,date1[0])<new Date(date2[2],date2[1]-1,date2[0])){
+                        $('#st'+i).after($('#st'+j));
+                        $('#st'+j).before($('#st'+i));
+                    }
+                }
+            }
+            break;
+        case "По убыванию":
+            for (let i=0;i<dates.length;i++){
+                for (let j=i;j<dates.length;j++){
+                    let date1=dates[i].innerText.split('/');
+                    let date2=dates[j].innerText.split('/');
+                    if (new Date(date1[2],date1[1]-1,date1[0])>new Date(date2[2],date2[1]-1,date2[0])){
+                        $('#st'+i).before($('#st'+j));
+                        $('#st'+j).after($('#st'+i));
+                    }
+                }
+            }
+    }
+};
+
+$('#show').on('click',(e)=>{
     "use strict";
     let options=$('option:selected');
     let option1=options[0].value;
@@ -138,4 +169,14 @@ $('.show').on('click',(e)=>{
             }
         }
     }
+});
+
+$('.btn.btn-info').on('click',(e)=>{
+    "use strict";
+    let view=$('.view');
+    for (let i=0;i<view.length;i++){
+        $('#st'+i)[0].style.display="block";
+    }
+    $('.selectpicker').selectpicker('val','');
+    $("input[type=date]").val("")
 });

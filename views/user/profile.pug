@@ -1,7 +1,9 @@
 extends ../layouts/layout
+
 block head
   title Профиль
   link(href='css/user/profile.css', rel='stylesheet')
+
 block body
   .container-fluid
     .row
@@ -34,6 +36,6 @@ block body
       h4 E-mail:
       input.form-control(name="email",type="text", value=user['email'])
       br
-      button.btn.btn-default(type="submit") Сохранить
+      button.btn.btn-success(type="submit") Сохранить
   include ../layouts/scripts
   script(src="/js/user/profile.js")

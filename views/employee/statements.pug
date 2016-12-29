@@ -15,19 +15,21 @@ block body
         input.form-control.name(type="text",placeholder="Имя")
         input.form-control.patronymic(type="text",placeholder="Отчество")
         br
-        select
+        select.selectpicker
           option Все
           option Просмотрено
           option Не просмотрено
-        select
+        select.selectpicker
           option Все
           option Принято
           option Не принято
         h4 От
-        input(type="date")
+        input(type="date").form-control
         h4 до
-        input(type="date")
-        button.btn.btn-default.show Показать
+        input(type="date").form-control
+        br
+        button.btn.btn-success(id="show") Показать
+        button.btn.btn-info Сбросить фильтр
         -for (var i=0;i<statements.length;i++)
           .panel.panel-default(id="st"+i)
             .panel-heading=statements[i]['surname']+" "+statements[i]['name']+" "+statements[i]['patronymic']

@@ -155,4 +155,4 @@ $('input.form-control.name').on('input',search);
 
 $('input.form-control.patronymic').on('input',search);
 
-$('.show').on('click',search);
+$('#show').on('click',search);
