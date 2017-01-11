@@ -1,7 +1,7 @@
 "use strict";
 const pg=require('pg');
 
-const client=new pg.Client("postgres://postgres:123@localhost:5432/policestation");
+const client=new pg.Client("postgres://postgres:123@127.0.0.1:5432/policestation");
 client.connect();
 /*let query=client.query(
     "CREATE TABLE users"

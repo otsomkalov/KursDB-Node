@@ -24,7 +24,7 @@ app.use(require('cookie-parser')());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-process.env.DATABASE_URL="postgres://postgres:123@localhost:5432/policestation";
+process.env.DATABASE_URL="postgres://postgres:123@127.0.0.1:5432/policestation";
 
 app.use(session({
     store: new (require('connect-pg-simple')(session))(process.env.DATABASE_URL),

@@ -74,9 +74,9 @@ let sort=()=>{
                 for (let j=i;j<dates.length;j++){
                     let date1=dates[i].innerText.split('/');
                     let date2=dates[j].innerText.split('/');
-                    if (new Date(date1[2],date1[1]-1,date1[0])<new Date(date2[2],date2[1]-1,date2[0])){
-                        $('#st'+i).after($('#st'+j));
-                        $('#st'+j).before($('#st'+i));
+                    if (new Date(date1[2],date1[1]-1,date1[0])>new Date(date2[2],date2[1]-1,date2[0])){
+                        $('#st'+i).before($('#st'+j));
+                        $('#st'+j).after($('#st'+i));
                     }
                 }
             }
@@ -86,12 +86,13 @@ let sort=()=>{
                 for (let j=i;j<dates.length;j++){
                     let date1=dates[i].innerText.split('/');
                     let date2=dates[j].innerText.split('/');
-                    if (new Date(date1[2],date1[1]-1,date1[0])>new Date(date2[2],date2[1]-1,date2[0])){
-                        $('#st'+i).before($('#st'+j));
-                        $('#st'+j).after($('#st'+i));
+                    if (new Date(date1[2],date1[1]-1,date1[0])<new Date(date2[2],date2[1]-1,date2[0])){
+                        $('#st'+i).after($('#st'+j));
+                        $('#st'+j).before($('#st'+i));
                     }
                 }
             }
+            break;
     }
 };
 
